@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>add_event_listener</title>
+</head>
+<body>
+  <input placeholder="Enter some text" />
+  <p id="history"></p>
+
+  <script type="text/javascript">
+  	const input = document.querySelector('input');
+  	const history = document.getElementById('history');
+
+  	input.addEventListener('change', updateValue);
+
+  	function updateValue(e) {
+  		history.textContent = e.target.value;
+  	}
+  </script>
+</body>
+</html>
