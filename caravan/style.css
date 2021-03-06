@@ -16,12 +16,12 @@
 }
 .header-top {
   width: 100%; /* 横幅いっぱい */
-  height: 70px; /* 高さ70px */
+  height: 60px; /* 高さ60px */
   background-color: hotpink; /* 背景色hotpink */
 }
 .header-bottom {
   width: 100%; /* 横幅いっぱい */
-  height: 50px; /* 高さ50px */
+  height: 60px; /* 高さ60px */
   background-color: pink; /* 背景色pink */
 }
 .main-visual {
