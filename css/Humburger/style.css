@@ -1,0 +1,30 @@
+.menu_button {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #999;
+}
+.menu_button:before,
+.menu_button:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  right: 6px;
+  margin-top: -2px;
+  border-top: 4px solid #666;
+  transition: transform 0.3s;
+}
+.menu_button:before {
+  transform: translateY(-6px);
+}
+.menu_button:after {
+  transform: translateY(6px);
+}
+.menu_button.active:before {
+  transform: rotate(45deg);
+}
+.menu_button.active:after {
+  transform: rotate(-45deg);
+}
