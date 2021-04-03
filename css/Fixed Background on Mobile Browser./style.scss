@@ -1,0 +1,94 @@
+// This is what makes the background right here. 
+html::before {
+  content: ' ';
+  display: block;
+  background-image: url('https://images.unsplash.com/photo-1427694012323-fb5e8b0c165b');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: -10; // This is pretty important.
+}
+
+// This is just the stuff to make the pen look pretty.
+html {
+  font-family: "source sans pro";
+  font-weight: 400;
+  color: #fdfdfd;
+}
+h1, h2, h3 {
+  font-family: lato;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+a {
+  text-decoration: none;
+  color: #FFC74E;
+  transition: color 200ms ease-in-out; 
+  &:hover, &:focus {
+    color: #C84EFF;
+  }
+}
+hr {
+  border: #555 1px solid;
+}
+.post {
+  font-size: 1.125rem;
+}
+.content {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.post-header-inner {
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 25rem;
+  padding: 0.5rem 1.5rem;
+  // text-shadow: 1px 1.5px 4px rgba(167, 221, 255, 0.8);
+  text-shadow: 0.5px 2px 2px rgba(1, 1, 1, 0.4);
+  h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  .post-date {
+    color: #B28B36;
+  }
+  .post-meta {
+    width: 100%;
+    margin-top: auto;
+    color: #FFF;
+    text-shadow: 1px 1.5px 4px rgba(1, 1, 1, 0.8);
+  }
+  .author-name {
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+}
+
+.post-content {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(18px);
+  padding: 1rem 1.5rem;
+    
+}
+.note {
+  color: #D3D3D3;
+  border: 3px solid red;
+  padding: 0.625rem;
+  span {
+    font-weight: bold;
+    color: red;
+  }
+}
+footer {
+  padding: 1rem 1.5rem;
+  background-color: #222;
+  padding-bottom: 4rem;
+}
